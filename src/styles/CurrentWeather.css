@@ -1,0 +1,92 @@
+.background {
+  background-image: url("../images/thunderstorm.jpg");
+  height: 80vh;
+  width: 60vh;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  float: left;
+  position: relative;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 4vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.background h1 {
+  text-align: right;
+  margin: 2vh;
+  margin-bottom: 0;
+}
+
+.background h3 {
+  text-align: right;
+  margin-right: 2vh;
+}
+
+.time {
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 8vh;
+  margin-left: 4vh;
+}
+
+@media (max-width: 1144px) {
+  /* index.css */
+  .main_container {
+    display: block;
+  }
+
+  .parent_container {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* CurrentWeather.jsx */
+  .background {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .bottom {
+    position: inherit;
+    display: contents;
+  }
+
+  .background h1 {
+    text-align: left;
+    margin-left: 0px;
+    margin-left: 1vh;
+  }
+
+  .background h3 {
+    margin-left: 1vh;
+    text-align: left;
+  }
+  .temperature {
+    margin-left: 0px;
+    font-size: 6vh;
+  }
+
+  .check {
+    display: inline-block;
+    margin-right: 2vh;
+    margin-left: 1vh;
+  }
+  /* Forecast.css */
+  .blacky {
+    opacity: 100%;
+  }
+}
